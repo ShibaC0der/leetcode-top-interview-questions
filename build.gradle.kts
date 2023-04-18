@@ -2,8 +2,7 @@ plugins {
     id("java")
 }
 
-group = "org.example"
-version = "1.0-SNAPSHOT"
+group = "shibaC0der.leetcode.tiq"
 
 repositories {
     mavenCentral()
