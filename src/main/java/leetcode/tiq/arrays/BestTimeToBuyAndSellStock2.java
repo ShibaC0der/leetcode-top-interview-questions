@@ -1,5 +1,7 @@
 package leetcode.tiq.arrays;
 
+import leetcode.Uninstantiable;
+
 /**
  * @see <a href="https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/564/">...</a>
  * You are given an integer array prices where prices[i] is the price of a given stock on the ith day.
@@ -27,7 +29,7 @@ package leetcode.tiq.arrays;
  * Explanation: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
  */
 
-final class BestTimeToBuyAndSellStock2 {
+final class BestTimeToBuyAndSellStock2 extends Uninstantiable {
     static final class Solution {
         public int maxProfit(int[] prices) {
             int maxProfit = 0;
@@ -38,9 +40,5 @@ final class BestTimeToBuyAndSellStock2 {
             }
             return maxProfit;
         }
-    }
-
-    private BestTimeToBuyAndSellStock2() {
-        throw new IllegalStateException();
     }
 }

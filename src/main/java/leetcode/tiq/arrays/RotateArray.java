@@ -1,5 +1,7 @@
 package leetcode.tiq.arrays;
 
+import leetcode.Uninstantiable;
+
 /**
  * @see <a href="https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/646/">...</a>
  * Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
@@ -24,7 +26,7 @@ package leetcode.tiq.arrays;
  * rotate 2 steps to the right: [3,99,-1,-100]
  */
 
-final class RotateArray {
+final class RotateArray extends Uninstantiable {
     static final class Solution {
         public void rotate(int[] nums, int k) {
             int steps = k % nums.length;
@@ -45,9 +47,5 @@ final class RotateArray {
                 right--;
             }
         }
-    }
-
-    private RotateArray() {
-        throw new IllegalStateException();
     }
 }

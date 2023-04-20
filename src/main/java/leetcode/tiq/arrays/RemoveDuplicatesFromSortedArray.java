@@ -1,5 +1,7 @@
 package leetcode.tiq.arrays;
 
+import leetcode.Uninstantiable;
+
 /**
  * @see <a href="https://leetcode.com/explore/interview/card/top-interview-questions-easy/92/array/727/">...</a>
  * Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.
@@ -21,7 +23,7 @@ package leetcode.tiq.arrays;
  * It does not matter what you leave beyond the returned k (hence they are underscores).
  */
 
-final class RemoveDuplicatesFromSortedArray {
+final class RemoveDuplicatesFromSortedArray extends Uninstantiable {
     static final class Solution {
         public int removeDuplicates(int[] nums) {
             int k = 1;
@@ -33,9 +35,5 @@ final class RemoveDuplicatesFromSortedArray {
             }
             return k;
         }
-    }
-
-    private RemoveDuplicatesFromSortedArray() {
-        throw new IllegalStateException();
     }
 }
