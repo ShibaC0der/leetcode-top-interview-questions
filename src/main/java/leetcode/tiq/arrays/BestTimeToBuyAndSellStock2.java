@@ -27,8 +27,8 @@ package leetcode.tiq.arrays;
  * Explanation: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
  */
 
-class BestTimeToBuyAndSellStock2 {
-    static class Solution {
+final class BestTimeToBuyAndSellStock2 {
+    static final class Solution {
         public int maxProfit(int[] prices) {
             int maxProfit = 0;
             for (int i = 1; i < prices.length; i++) {

@@ -24,8 +24,8 @@ package leetcode.tiq.arrays;
  * rotate 2 steps to the right: [3,99,-1,-100]
  */
 
-class RotateArray {
-    static class Solution {
+final class RotateArray {
+    static final class Solution {
         public void rotate(int[] nums, int k) {
             int steps = k % nums.length;
             if (steps == 0) return;

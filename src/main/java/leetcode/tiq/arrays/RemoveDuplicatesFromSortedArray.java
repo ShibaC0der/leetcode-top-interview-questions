@@ -21,8 +21,8 @@ package leetcode.tiq.arrays;
  * It does not matter what you leave beyond the returned k (hence they are underscores).
  */
 
-class RemoveDuplicatesFromSortedArray {
-    static class Solution {
+final class RemoveDuplicatesFromSortedArray {
+    static final class Solution {
         public int removeDuplicates(int[] nums) {
             int k = 1;
             for (int i = 1; i < nums.length; i++) {
